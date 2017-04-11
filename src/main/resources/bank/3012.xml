@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="gb2312"?>
+<root>
+  <head>
+    <TransCode>3012</TransCode>
+    <TransDate>${date?string("yyyyMMdd")}</TransDate>
+    <TransTime>${date?string("HHmmss")}</TransTime>
+    <SeqNo>${SeqNo}</SeqNo>
+  </head>
+  <body>
+    <Result>1</Result>
+    <AddWord>保证金入账明细查询成功!!</AddWord>
+    <#list bankList as b>
+    <bank>
+      <InDate>${b.inDate?string("yyyyMMdd")}</InDate>
+      <InTime>${b.inDate?string("HHmmss")}</InTime>
+      <InAmount>${b.inAmount?c}</InAmount>
+      <InName>${b.inName}</InName>
+      <InAcct>${b.inAcct!''}</InAcct>
+      <InMemo>79410188000359509</InMemo>
+      <HstSeqNum>${b.hstSeqNum}</HstSeqNum>
+      <PunInst></PunInst>
+      <Gernal></Gernal>
+    </bank>
+    </#list>
+  </body>
+</root>

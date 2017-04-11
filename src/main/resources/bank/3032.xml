@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<root>
+  <head>
+    <TransCode>3032</TransCode>
+    <TransDate>${date?string("yyyyMMdd")}</TransDate>
+    <TransTime>${date?string("HHmmss")}</TransTime>
+    <SeqNo>${SeqNo}</SeqNo>
+  </head>
+  <body>
+    <AddWord>接收成功</AddWord>
+    <BanK>
+      <HstSeqNum>${pay.hstSeqNum}</HstSeqNum>
+      <InAcctNo>${pay.inAcct}</InAcctNo>
+      <InName>${pay.inName}</InName>
+      <Result>1</Result>
+    </BanK>
+  </body>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<root>
+  <head>
+    <TransCode>3002</TransCode>
+    <TransDate>${p.createTime?string("yyyyMMdd")}</TransDate>
+    <TransTime>${p.createTime?string("HHmmss")}</TransTime>
+    <SeqNo>${SeqNo}</SeqNo>
+  </head>
+  <body>
+    <TransRltMsg>创建帐户成功</TransRltMsg>
+    <IAcctNo>${p.acctNo}</IAcctNo>
+    <AuthCode>${p.authCode}</AuthCode>
+  </body>
+</root>
