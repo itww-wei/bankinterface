@@ -24,14 +24,14 @@ public class InitContextDataListener implements ServletContextListener{
 	}
 
 	public void contextInitialized(ServletContextEvent context) {
-//		Thread thread = new Thread() {
-//			public void run() {
-//				//启动socket服务
-//				Server server=new Server();
-//				server.startServer();
-//			}
-//		};
-//		thread.start();
+		Thread thread = new Thread() {
+			public void run() {
+				//启动socket服务
+				Server server=new Server();
+				server.startServer();
+			}
+		};
+		thread.start();
 		
 		//测试
 		Server server=new Server();
