@@ -87,7 +87,7 @@ public class ProjectBankController {
     @SuppressWarnings("all")
 	@RequestMapping(value="/list")
     @ResponseBody
-    public String list(@RequestBody PageDto page,ProjectBank project,@RequestBody Sort sort,HttpServletRequest request) throws Exception{
+    public String list(@RequestBody PageDto page,ProjectBank project,HttpServletRequest request) throws Exception{
     	String no=request.getParameter("projectNo");
     	List<ProjectBank> list = projectBankService.findAll(project,page);
     	return CommUtil.getPageJSONData(page, true).toString();
